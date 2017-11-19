@@ -1,0 +1,30 @@
+{
+  "name": "powermeter-zipabox-dispatch",
+  "description": "Middleware to connect my power meter reader with zipabox",
+  "version": "1.0.0",
+  "author": {
+    "name": "Thomas Malt",
+    "email": "thomas@malt.no",
+    "url": "https://malt.no/"
+  },
+  "repository": "https://github.com/tfmalt/powermeter-zipabox-dispatcher.git",
+  "license": "MIT",
+  "dependencies": {
+    "cron-emitter": "^1.2.2",
+    "jsonfile": "^4.x",
+    "node-fetch": "^1.7.3",
+    "winston": "^2.4.x"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.4"
+  },
+  "bin": {
+    "powermeter-zipabox-updater": "./powermeter-zipabox-updater.js"
+  },
+  "jshintConfig": {
+    "esversion": 6
+  }
+}
