@@ -28,8 +28,8 @@ log.add(log.transports.Console, {
     timestamp:   true
 });
 log.info("Starting PowerMeter Zipabox Dispatcher v" + pkg.version);
-log.debug("  Log level debug");
-log.debug("  These are the options:", opts);
+log.debug("Log level debug");
+log.debug("These are the options:", opts);
 
 const cron = new CronEmitter();
 cron.add('*/30 * * * * *', 'every_thirty_seconds');
@@ -50,7 +50,7 @@ cron.on('every_hour', (name) => {
             );
         })
         .then(res => {
-            log.info("Got res from zipato: ", res.status);
+            log.info("Got response from zipato for kwh: ", res.status);
         })
         .catch( err => {
             log.error("Got an exception:", err.message);
@@ -75,7 +75,7 @@ cron.on('every_thirty_seconds', (name) => {
             );
         })
         .then(res => {
-            log.info("Got res from zipato: ", res.status);
+            log.info("Got response from zipato for watt: ", res.status);
         })
         .catch( err => {
             log.error("Got an exception:", err.message);
