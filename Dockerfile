@@ -8,6 +8,5 @@ COPY . /usr/lib/power
 RUN npm install
 
 ENV NODE_ENV=docker
-ENV DEBUG=power-meter:*
 
 CMD npm start
