@@ -1,7 +1,7 @@
 {
   "name": "powermeter-zipabox-dispatch",
   "description": "Middleware to connect my power meter reader with zipabox",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "author": {
     "name": "Thomas Malt",
     "email": "thomas@malt.no",
@@ -19,5 +19,8 @@
   },
   "scripts": {
     "start": "node ./powermeter-zipabox-updater.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0"
   }
 }
